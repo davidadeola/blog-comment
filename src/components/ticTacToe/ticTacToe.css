@@ -1,5 +1,14 @@
 .square {
+  margin: 0;
+  width: 2em;
+  font-weight: 600;
+  font-size: x-large;
+  height: 2em;
   border: 1px solid white;
   color: white;
   background-color: transparent;
+}
+
+.board-row {
+  margin: 0;
 }

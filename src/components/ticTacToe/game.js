@@ -1,10 +1,10 @@
 import React from "react";
-import { Card } from "./card";
+import { Board } from "./board";
 
 export const Game = () => {
   return (
     <div>
-      <Card />
+      <Board />
     </div>
   );
 };
