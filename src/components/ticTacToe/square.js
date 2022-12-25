@@ -1,11 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ticTacToe.css";
-export const Square = ({ value }) => {
-  const handleClicked = () => {
-    console.log("Clicked", value);
-  };
+export const Square = ({ value, onSquareClick }) => {
   return (
-    <button className="square" onClick={handleClicked}>
+    <button className="square" onClick={onSquareClick}>
       {value}
     </button>
   );
