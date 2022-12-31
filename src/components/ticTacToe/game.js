@@ -6,10 +6,15 @@ export const Game = () => {
   const [history, setHistory] = useState([Array(9).fill(null)]);
   const currentSquares = history[history.length - 1];
   console.log(currentSquares);
+
+  function handlePlay(nextSquares) {
+    setHistory((history) => history.concat([nextSquares]));
+    setXIsNext(!xIsNext);
+  }
   return (
     <div className="game">
       <div className="game-board">
-        <Board />
+        <Board xIsNext={xIsNext} />
       </div>
       <div className="game-info">
         <ol></ol>
