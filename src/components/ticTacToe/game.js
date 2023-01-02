@@ -8,7 +8,7 @@ export const Game = () => {
   console.log(currentSquares);
 
   function handlePlay(nextSquares) {
-    setHistory((history) => history.concat([nextSquares]));
+    setHistory([...history, nextSquares]);
     setXIsNext(!xIsNext);
   }
   return (
