@@ -1,7 +1,16 @@
 import React from "react";
+import "./componentMemory.css";
 
 const ComponentMemory = () => {
-  return <div>ComponentMemory</div>;
+  return (
+    <div className="memory-container">
+      <button>Next</button>
+      <h1>Home made sculptures let's go</h1>
+      <div>1 0f 12</div>
+      <button>Show details</button>
+      <img src="" alt="noferrer" />
+    </div>
+  );
 };
 
 export default ComponentMemory;
