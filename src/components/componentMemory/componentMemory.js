@@ -1,5 +1,6 @@
 import React from "react";
 import "./componentMemory.css";
+import { dataList } from "./data.js";
 
 const ComponentMemory = () => {
   return (
