@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./componentMemory.css";
 import { dataList } from "./data.js";
 
 const ComponentMemory = () => {
+  const [index, setIndex] = useState(0);
+
+  const handleNext = () => {
+    setIndex(index + 1);
+  };
+
   return (
     <div className="memory-container">
       <button>Next</button>
