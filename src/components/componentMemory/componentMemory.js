@@ -11,7 +11,7 @@ const ComponentMemory = () => {
 
   return (
     <div className="memory-container">
-      <button>Next</button>
+      <button onClick={handleNext}>Next</button>
       <h1>Home made sculptures let's go</h1>
       <div>1 0f 12</div>
       <button>Show details</button>
