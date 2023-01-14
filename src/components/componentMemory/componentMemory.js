@@ -9,10 +9,12 @@ const ComponentMemory = () => {
     setIndex(index + 1);
   };
 
+  let sculpture = dataList[index];
+
   return (
     <div className="memory-container">
       <button onClick={handleNext}>Next</button>
-      <h1>Home made sculptures let's go</h1>
+      <h1>{sculpture.name}</h1>
       <div>1 0f 12</div>
       <button>Show details</button>
       <img src="" alt="noferrer" />
