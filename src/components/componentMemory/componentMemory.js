@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./componentMemory.css";
-import { dataList } from "./data.js";
+import { sculptureList } from "./data.js";
 
 const ComponentMemory = () => {
   const [index, setIndex] = useState(0);
@@ -9,16 +9,16 @@ const ComponentMemory = () => {
     setIndex(index + 1);
   };
 
-  let sculpture = dataList[index];
+  let sculpture = sculptureList[index];
 
   return (
     <div className="memory-container">
       <button onClick={handleNext}>Next</button>
       <h1>
         <i>{sculpture.name}</i>
-        {sculpture.artist}
+        by {sculpture.artist}
       </h1>
-      <div>1 0f 12</div>
+      <div>1 0f {sculptureList.length}</div>
       <button>Show details</button>
       <img src="" alt="noferrer" />
     </div>
